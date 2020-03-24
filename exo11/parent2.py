@@ -1,3 +1,5 @@
 class Parent2():
     def test(self):
-       print("parent2")
+        """renvoie parent2
+        """
+        print("parent2")
