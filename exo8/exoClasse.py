@@ -1,7 +1,9 @@
 import os
-import Voiture
+from Voiture import Voiture
 
-Voiture.Voiture.demarrer("")
+v = Voiture()
+
+v.demarrer()
 
 os.system("pause")
 
