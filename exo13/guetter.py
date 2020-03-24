@@ -1,11 +1,11 @@
 class Vehicule():
 
-    Roues = 4
+    __roues = 4
 
     @property
     def nbRoues(self):
-        return self.Roues
+        return self.__roues
 
     @nbRoues.setter
-    def nbRoues(self, nbRoues):
-        self.nbRoues = nbRoues
+    def nbRoues(self, nbRoue):
+        self.__roues = nbRoue
