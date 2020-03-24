@@ -3,7 +3,7 @@ import os
 
 def decorateurTest(func):
     def custom():
-        return print(func()[0:5])
+        return func()[0:5]
     return custom
 
 
@@ -12,6 +12,6 @@ def carac():
     return "j'aime le python"
 
 
-carac()
+print(carac())
 
 os.system("pause")
