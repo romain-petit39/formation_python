@@ -3,20 +3,20 @@ import sys
 
 
 class Vehicule():
-
+    logging.basicConfig()
+    log = logging.getLogger("Vehicule")
+    log.setLevel(logging.CRITICAL)
     __roues = 4
 
     @property
     def nbRoues(self):
-        logging.warning('attention')
+        log.warning('attention')
         return self.__roues
 
     @nbRoues.setter
     def nbRoues(self, nbRoue):
         self.__roues = nbRoue
-        logging.critical('critique')
+        log.critical('critique')
 
 
-    logging.basicConfig()
-    log = logging.getLogger("Vehicule")
-    log.setLevel(logging.CRITICAL)
+    
