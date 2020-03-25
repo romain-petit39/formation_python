@@ -1,5 +1,6 @@
 from parent1 import Parent1
 from parent2 import Parent2
+import logging
 
 
 class Enfant(Parent1, Parent2):
@@ -15,5 +16,6 @@ class Enfant(Parent1, Parent2):
     def appel(self):
         """appel test de parent
         """
+        logging.warn
         self.test()
 
